@@ -1,0 +1,8 @@
+variantFile	/home/local/ARCS/nz2274/projects/VT_MultiD/test/DNMT3A_TET2.CCHMC.vcf.gz
+pedFile	/home/local/ARCS/nz2274/projects/VT_MultiD/test/IPAH.APAH.ped
+regionFile	/home/local/ARCS/nz2274/projects/VT_MultiD/test/region.txt   ## could be exon based or gene based or transcript based  ### first column BinName chr:start-end chr: start-end
+FunCol	Func.refGene	^exonic|^splicing
+ExonicFunCol	ExonicFunc.refGene	nonsynonymous_SNV|stopgain|frameshift|stoploss|whole
+freq_query	gnomAD_exome_ALL	0	0.001	0.00002   ### from to by
+dmis_query	REVEL	0.2	1	0.05	## from to by
+OutName	test.REVEL.FREQ.VT.txt
